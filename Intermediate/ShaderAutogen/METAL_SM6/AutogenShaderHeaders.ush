@@ -74,9 +74,6 @@ FGBufferData  DecodeGBufferDataDirect(float4 InMRT1,
 	bool bForceUnlitOrDefaultLit = false)
 {
 	FGBufferData Ret = (FGBufferData)0;
-	Ret.WorldNormal = float3(0,0,1);
-	Ret.Depth = 0.f;
-	Ret.ShadingModelID = 1;
 	float3 WorldNormal_Compressed = 0.0f;
 	WorldNormal_Compressed.x = InMRT1.x;
 	WorldNormal_Compressed.y = InMRT1.y;
@@ -329,9 +326,6 @@ FGBufferData  DecodeGBufferDataDirect(float4 InMRT1,
 	bool bForceUnlitOrDefaultLit = false)
 {
 	FGBufferData Ret = (FGBufferData)0;
-	Ret.WorldNormal = float3(0,0,1);
-	Ret.Depth = 0.f;
-	Ret.ShadingModelID = 1;
 	float3 WorldNormal_Compressed = 0.0f;
 	WorldNormal_Compressed.x = InMRT1.x;
 	WorldNormal_Compressed.y = InMRT1.y;
